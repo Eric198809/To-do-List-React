@@ -7,16 +7,24 @@ form {
   display: flex;
   width: 100%;
   justify-content: center;
-  gap: 30px;
+  
 }
 
 input.content-form{
-  border-radius: 6px;
-  border: solid 1px;
+ 
+  border: solid 2px #761bac;
   width:70%;
+  padding: 20px;
+  border-radius: 30px 0px 0px 30px ;
+  
 }
+
 
 .button-submit-form{
   padding: 10px 20px;
-  border-radius: 15px;
+  border: solid 2px #761bac;
+  border-radius: 0px 30px 30px 0px;
+  background: white;
+  cursor: pointer;
+  
 }

@@ -2,15 +2,23 @@
 
 
 .todoList-container{
+  
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: bisque;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 60vw;
+
+}
+
+form{
+ 
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .todos{
   width: 100%;
+  
 }

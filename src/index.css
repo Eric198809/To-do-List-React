@@ -10,8 +10,15 @@ body{
   height: 100vh;
   justify-content: center;
   align-items: center;
+  background-color: #030621;
+  
 }
 
+h1{
+  color: white;
+}
+
+p{color: aliceblue;}
 
 
 

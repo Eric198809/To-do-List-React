@@ -6,15 +6,18 @@
   background-color: white;
   margin: 15px;
   border-radius: 15px;
-  width: 300px;
   white-space: normal;
 
   
 }
 
+.todo {
+  background-color: #030621; ;
+ border: solid 2px white;
+}
+
 .todo p{
-  
- 
+  color: white;
 }
 
 .actions-todo{

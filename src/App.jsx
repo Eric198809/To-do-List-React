@@ -32,7 +32,6 @@ function App() {
   return (
     <>
       <div className="todoList-container">
-        <h1>Ma Todo List</h1>
         <Form addTask={addTask} setTask={setTask} task={task} />
         <div className="todos">
           {listTasks.length > 0 ? (
@@ -45,7 +44,7 @@ function App() {
               />
             ))
           ) : (
-            <p>Vous n'avez pas de taches</p>
+            <p style={{textAlign:"center"}}>Vous n'avez pas de taches</p>
           )}
         </div>
       </div>
