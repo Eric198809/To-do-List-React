@@ -16,6 +16,21 @@
  border: solid 2px white;
 }
 
+.content{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.icone-valid{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: aliceblue;
+  display: flex;
+  place-items: center;
+  height: 15px;
+}
+
 .todo p{
   color: white;
 }
@@ -28,10 +43,3 @@
   
 }
 
-.icone-valid{
-  padding: 10px;
-  border-radius: 10px;
-  background-color: aliceblue;
-  display: flex;
-  place-items: center;
-}

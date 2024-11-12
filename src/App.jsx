@@ -6,6 +6,7 @@ import "./Styles/App.css";
 function App() {
   const [listTasks, setListTasks] = useState([]);
   const [task, setTask] = useState("");
+  
 
   const addTask = (e) => {
     e.preventDefault();
@@ -27,12 +28,27 @@ function App() {
    
       
     }
+    const changeContentTask = (taskId, newContent) => {
+      setListTasks(
+        listTasks.map((task) =>
+         task.id === taskId ? { ...task, content: newContent } : task
+        )
+      );
+     
+    };
+      
+     
+    
+   console.log(listTasks);
+   
+      
+    
   
 
   return (
     <>
       <div className="todoList-container">
-        <Form addTask={addTask} setTask={setTask} task={task} />
+        <Form addTask={addTask} setTask={setTask} task={task}/>
         <div className="todos">
           {listTasks.length > 0 ? (
             listTasks.map((todo) => (
@@ -41,6 +57,7 @@ function App() {
                 id={todo.id}
                 content={todo.content}
                 removeTask={removeTask}
+                 changeContentTask={changeContentTask}
               />
             ))
           ) : (
