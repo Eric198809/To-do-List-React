@@ -1,28 +1,26 @@
-.todo{
+.todo {
   display: flex;
   justify-content: space-between;
   padding: 15px;
   gap: 60px;
-  background-color: white;
   margin: 15px;
   border-radius: 15px;
   white-space: normal;
-
-  
+  background-color: #030621;
+  border: solid 2px white;
 }
 
-.todo {
-  background-color: #030621; ;
- border: solid 2px white;
+.todo p {
+  color: white;
 }
 
-.content{
+.content {
   display: flex;
   gap: 15px;
   align-items: center;
 }
 
-.icone-valid{
+.icone-valid {
   padding: 10px;
   border-radius: 10px;
   background-color: aliceblue;
@@ -31,15 +29,17 @@
   height: 15px;
 }
 
-.todo p{
-  color: white;
-}
-
-.actions-todo{
+.actions-todo {
   display: flex;
   gap: 20px;
   justify-content: center;
   align-items: center;
-  
 }
 
+.edit-trash {
+  cursor: pointer;
+}
+
+.icone-trash {
+  cursor: pointer;
+}

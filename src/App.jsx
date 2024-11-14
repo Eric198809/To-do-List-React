@@ -6,8 +6,8 @@ import "./Styles/App.css";
 function App() {
   const [listTasks, setListTasks] = useState([]);
   const [task, setTask] = useState("");
-  
 
+// Ajouter une tache
   const addTask = (e) => {
     e.preventDefault();
     const newTask = {
@@ -19,36 +19,32 @@ function App() {
     setTask("");
   };
 
+  // Supprimer une tache
   const removeTask = (id) => {
-    const removeConfirmation= confirm("Etes vous sur de vouloir supprimer la tâche? ")
+    const removeConfirmation = confirm(
+      "Etes vous sur de vouloir supprimer la tâche? "
+    );
     if (removeConfirmation) {
-        const newList = listTasks.filter((task) => task.id !== id);
-    setListTasks(newList);
-  };
-   
-      
+      const newList = listTasks.filter((task) => task.id !== id);
+      setListTasks(newList);
     }
-    const changeContentTask = (taskId, newContent) => {
-      setListTasks(
-        listTasks.map((task) =>
-         task.id === taskId ? { ...task, content: newContent } : task
-        )
-      );
-     
-    };
-      
-     
-    
-   console.log(listTasks);
-   
-      
-    
+  };
+
+  // Modifier une tache
+  const changeContentTask = (taskId, newContent) => {
+    setListTasks(
+      listTasks.map((task) =>
+        task.id === taskId ? { ...task, content: newContent } : task
+      )
+    );
+  };
+
   
 
   return (
     <>
       <div className="todoList-container">
-        <Form addTask={addTask} setTask={setTask} task={task}/>
+        <Form addTask={addTask} setTask={setTask} task={task} />
         <div className="todos">
           {listTasks.length > 0 ? (
             listTasks.map((todo) => (
@@ -57,11 +53,11 @@ function App() {
                 id={todo.id}
                 content={todo.content}
                 removeTask={removeTask}
-                 changeContentTask={changeContentTask}
+                changeContentTask={changeContentTask}
               />
             ))
           ) : (
-            <p style={{textAlign:"center"}}>Vous n'avez pas de taches</p>
+            <p style={{ textAlign: "center" }}>Vous n'avez pas de taches</p>
           )}
         </div>
       </div>
