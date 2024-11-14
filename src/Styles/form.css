@@ -30,3 +30,12 @@ input.content-form{
   
   
 }
+
+@media screen and (max-width: 800px) {
+  form{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+}

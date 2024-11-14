@@ -12,13 +12,14 @@
 
 }
 
-form{
- 
-  padding: 10px;
-  border-radius: 10px;
-}
 
 .todos{
   width: 100%;
   
+}
+
+@media screen and (max-width: 800px) {
+  .todoList-container{
+    width: 90vw;
+  }
 }
